@@ -1,0 +1,80 @@
+.contenedor {
+    display: grid;
+    grid-template-areas:
+        "A A A A"
+        "B B B B"
+        "C D D D"
+        "E E E E";
+}
+
+header {
+    grid-area: A;
+    background-color: #2C3333;
+    color: white;
+    align-content: center;
+}
+
+nav {
+    grid-area: B;
+    background-color: #2E4F4F;
+    color: white;
+}
+
+aside {
+    grid-area: C;
+    background-color: #0E8388;
+}
+
+main {
+    grid-area: D;
+    background-color: #CBE4DE;
+    align-content: center;
+}
+
+img {
+    margin-right: auto;
+    background-color: white (43, 55, 226);
+    max-width: 700px;
+}
+
+footer {
+    grid-area: E;
+    background-color: #2C3333;
+    color: white;
+}
+
+.menu-horizontal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.menu-horizontal a {
+    background-color: #CBE4DE;
+    color: black;
+    text-decoration: none;
+    padding: 10px 20 px;
+}
+
+.menu-vertical {
+    list-style: none;
+}
+
+.menu-vertical a {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+.centrado {
+    text-align: center;
+}
+
+.textos {
+    font-size: larger;
+}
+
+.imagenes {
+text-align: center;
+}

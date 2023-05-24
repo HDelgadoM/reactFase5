@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DSW Fase 3 grupal</title>
+    <link rel="stylesheet" href="css/estilo grupal.css">
+</head>
+
+<body class="contenedor">
+
+    <header>
+        <h1 class="centrado">DISEÑO HTML DE SITIOS WEB</h1>
+    </header>
+    <nav>
+        <ul class="menu-horizontal">
+            <li><a href="inicio.html">Inicio</a></li>
+            <li><a href="tema2.html">Temas</a></li>
+            <li><a href="audios.html">Audios sobre temas</a></li>
+            <li><a href="nosotros.html">Equipo</a></li>
+        </ul>
+    </nav>
+    <aside>
+        <ul class="menu-vertical">
+            <li class="nav-item"> <a class="nav-link" href="inicio.html">Inicio</a></li>
+            <li class="nav-item dropdown">
+                <a href="#" id="Drop1" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="true"></a>
+                Temas </a>
+                <div class="dropdown menu" aria-labelledby="Drop1">
+                    <a class="dropdown-item" href="tema1.html">Selectores SCC</a>
+                    <a class="dropdown-item" href="tema2.html">Box model</a>
+            </li>
+            </div>
+            <li class="nav-item"> <a class="nav-link" href="audios.html">Audios</a></li>
+            <li class="nav-item"> <a class="nav-link" href="nosotros.html">Equipo</a></li>
+        </ul>
+    </aside>
+    <main>
+        <section>
+        <h2 class="centrado">BOX MODEL</h2>
+        <p class="textos">De acuerdo con Hong (2018), todos los elementos HTML pueden ser vistos como cajas,
+            el modelo de cajas permite definir los espacios entre ellas. </p>
+
+        <p class="textos">A continuación se presentan las propiedades de las cajas: </p>
+        <p class="textos">
+            • <strong>Contenido:</strong> texto, imágenes, etc.
+            <br>
+            • <strong>Borde interno (relleno):</strong> área transparente alrededor del contenido, dentro de la
+            caja.
+            <br>
+            • <strong>Margen:</strong> espacio entre las cajas.
+            <br>
+            • <strong>Límite:</strong> borde alrededor de contenido y relleno. Separa el borde interno del
+            margen.
+            <br>
+        </p>
+        <div class="imagenes">
+            <img src="imagenes/Modelo cajas.png" alt="Propiedades del modelo de cajas" width="600px">
+        </div>
+   
+            <p class="textos">
+                En general se puede ajustar el tamaño, ancho y/o alto del contenido, pero no de las demás propiedades.
+                Con
+                la propiedad: "box-sizing:border-box", se puede asignar el tamaño de toda la caja. </p>
+
+            <div class="imagenes">
+                <img src="imagenes/CSS-Box-Model.png" alt="Ejemplo de ajustes de tamaño a las cajas." width="500" height="300"> 
+            </div>
+            <p class="textos"> Tipos de elementos en las cajas: </p>
+            <p class="textos"> • <strong>Elementos de bloque:</strong> usan el ancho total del navegador y siempre
+                empiezan en una
+                nueva
+                línea, ejemplo:
+                encabezados y párrafos. Ejemplos de etiquetas: "div, h1, form". </p>
+            <p class="textos"> • <strong>Elementos en línea:</strong> no empiezan en nueva línea y solo toman el ancho
+                necesario.
+                Ejemplos:
+                de etiquetas
+                "span, img". <br>
+            </p>
+        </section>
+        <hr>
+    </main>
+    <footer class="centrado">
+        Esta página fue desarrollada por: Henry A. Delgado M. y Santiago Núñez  <br>
+        Universidad Nacional Abierta y a Distancia UNAD <br>
+        Programa: Tecnología en Producción de Audio <br>
+        Fecha de actualización: Mayo 23 de 2023 <br>
+
+    </footer>
+</body>
+
+</html>

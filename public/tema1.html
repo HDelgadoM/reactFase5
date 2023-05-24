@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DSW Fase 3 grupal</title>
+    <link rel="stylesheet" href="css/estilo grupal.css">
+</head>
+
+<body class="contenedor">
+
+    <header>
+        <h1 class="centrado">DISEÑO HTML DE SITIOS WEB</h1>
+    </header>
+    <nav>
+        <ul class="menu-horizontal">
+            <li><a href="inicio.html">Inicio</a></li>
+            <li><a href="tema2.html">Temas</a></li>
+            <li><a href="audios.html">Audios sobre temas</a></li>
+            <li><a href="nosotros.html">Equipo</a></li>
+        </ul>
+    </nav>
+    <aside>
+        <ul class="menu-vertical">
+            <li class="nav-item"> <a class="nav-link" href="inicio.html">Inicio</a></li>
+            <li class="nav-item dropdown">
+                <a href="#" id="Drop1" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="true"></a>
+                Temas </a>
+                <div class="dropdown menu" aria-labelledby="Drop1">
+                    <a class="dropdown-item" href="tema1.html">Selectores SCC</a>
+                    <a class="dropdown-item" href="tema2.html">Box model</a>
+            </li>
+            </div>
+            <li class="nav-item"> <a class="nav-link" href="audios.html">Audios</a></li>
+            <li class="nav-item"> <a class="nav-link" href="nosotros.html">Equipo</a></li>
+        </ul>
+    </aside>
+    <main>
+        <section>
+            <h2 class="centrado">¿Que son y para que sirven los Selectores CSS?</h2>
+            <p class="textos">
+                Definen principalmente sobre qué elementos se utilizan un conjunto de reglas CSS como, por ejemplo. <br>
+                Sintaxis: elthame
+                Ejemplo: input, se aplica a cualquier elemento "input" <br>
+                <strong>Selectores de clase:</strong> <br>
+                En todos los elementos se tiene un atributo de class especificado.
+                Sintaxis: .classname <br>
+                Ejemplo: .index se selecciona cualquier elemento que tenga esta clase, “index”
+            </p>
+            <div class="imagenes">
+                <img src="imagenes/sintaxis-avanzada-css.png" alt="Sintaxis CSS" width="800">
+            </div>
+            <h3>¿Como se utilizan los selectores CSS?</h3>
+            <p class="textos">
+                <strong>Selector de ID:</strong> <br>
+                Podemos seleccionar un elemento lo cual el valor de su atributo id. Solo puede haber un elemento
+                determinado dentro de un documento. <br>
+                Sintaxis: #idname
+                Ejemeplo: #toc, se utiliza para cualquier elemento que tenga el ID “toc” <br>
+                <strong>Selector universal:</strong> <br>
+                Se selecciona todos los elementos. Opcionalmente esta restringido a un espacio de nombre específico o en
+                los espacios de nombres. <br>
+                Sintexis: *ns l * * l *¨
+                Ejemplo: * se aplica a todos los elementos del documento.
+            </p>
+
+            <h3>Otros selectores y combinadores</h3>
+            <p class="textos">
+                <strong>Selector de atributos:</strong> <br>
+                Selecciona elementos extremadamente en el valor de un determinado. <br>
+                Sintaxis: [attr] [attr=value] [attr-=value] [attr l =value] [attr^=value]
+                [attr$=value] [attr*=value] <br>
+                Ejemplo: [autoplay] seleccionará todos los elementos que pueden tener un atributo de “autoplay”. <br>
+
+                <strong>Combinadores:</strong> <br>
+                Combinador de hermanos adictivos.
+                Los combinadores + seleccionan hermanos adictivos. Esto quiere decir que el segundo elemento sigue
+                directamente al primero y ambos comparten el mismo elemento padre. <br>
+                Sintaxis: A + B
+                Ejemplo: La regla h2 + p se aplicará a todos los elementos "p" que siguen directamente a un elemento
+                "h2" (en-US). <br>
+                <strong>Combinador general de hermanos.</strong> <br>
+                El combinador selecciona hermanos, ¿Qué quiere decir? Que el segundo elemento sigue al primero, ambos
+                comparten el mismo elemento padre. <br>
+                Sintaxis: A ~ B
+                Ejemplo: La regla p ~span se aplicará a todos los elementos "span" que siguen un elemento "p".
+            </p>
+        </section>
+        <hr>
+    </main>
+    <footer class="centrado">
+        Esta página fue desarrollada por: Henry A. Delgado M. y Santiago Núñez <br>
+        Universidad Nacional Abierta y a Distancia UNAD <br>
+        Programa: Tecnología en Producción de Audio <br>
+        Fecha de actualización: Mayo 23 de 2023 <br>
+
+    </footer>
+</body>
+
+</html>
